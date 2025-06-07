@@ -1,18 +1,22 @@
 import "./styles.css"
 
+import AppRouter from "./components/Router/AppRouter"
 import React from "react"
 
-/*import { Router } from "react-router"*/
-
-function App() {
+const App = () => {
   return (
-    <>
-      <div>
-        <h1 className="text-sm font-bold underline">Hello World</h1>
-      </div>
+    <div className="App">
+      
 
-    </>
-  )
+      <ul id="nav-list">
+        <li><a href="/home">BekzatBagdat</a></li>
+        <li><a href="/projects">projects</a></li>
+        <li><a href="">Github</a></li>
+      </ul>
+      <AppRouter/>
+    </div>
+    
+  ) 
 }
 
 export default App
