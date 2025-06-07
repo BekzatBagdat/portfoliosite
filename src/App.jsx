@@ -1,14 +1,14 @@
-import { useState } from 'react'
+import "./styles.css"
+
+import React from "react"
+
+/*import { Router } from "react-router"*/
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <h1 className="text-sm font-bold underline">Hello World</h1>
       </div>
 
     </>
